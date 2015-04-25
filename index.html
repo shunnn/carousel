@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>carousel</title>
+<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/script.js"></script>
+<!--
+  使用可のライブラリは原則jQueryのみ
+  左右スクロール（自動スクロール）
+  左右ボタン
+  ページャー（枚数がわかる●等）あり
+  数決め打ちではなく、<li>等の数で自動追加
+  無限ループ処理
+-->
+</head>
+
+<body>
+<div id="carousel_wrapper">
+
+  <div class="carousel">
+    <ul class="carousel_inner clearfix">
+      <li style="border:solid 10px #000">1</li>
+      <li style="border:solid 10px #333">2</li>
+      <li style="border:solid 10px #666">3</li>
+      <li style="border:solid 10px #999">4</li>
+      <li style="border:solid 10px #ccc">5</li>
+      <li style="border:solid 10px #eee">6</li>
+    </ul>
+  </div>
+
+  <p class="carouselnav clearfix"><a id="prev" class="disable">&laquo;prev</a><a id="next">next&raquo;</a></p>
+
+
+</div>
+</body>
+</html>
